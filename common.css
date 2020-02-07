@@ -1,0 +1,72 @@
+/* CSS commun à toutes les pages */
+
+/* Propriétés génrales */
+
+.content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility:hidden;
+}
+
+.row {
+    margin:auto;
+}
+
+.container {
+    padding: 20px 120px;
+}
+
+#page-footer {
+    background-color: #375e7b;
+    height:110px;
+}
+
+/* Navbar */
+
+nav {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(55,94,123,0.9);
+}
+
+.navbar-header a {
+    color:white;
+}
+
+.navbar-header img {
+    height:50px;
+    margin-right:25px;
+}
+
+.nav li a {
+    color:white;
+}
+
+.nav li a:hover{
+    background-color: #294b65;
+    border-radius: 7px;
+}
+
+.navbar-right{
+    margin-right:3%;
+}
+
+#facebook {
+    margin-right: 2%; 
+    width:40px; 
+    padding-top:5px;
+}
+
+/* responsive */
+
+@media only screen and (max-width:800px){
+    .navbar-fixed-top {
+        display:none;
+    }
+}

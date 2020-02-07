@@ -1,0 +1,13 @@
+nav {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(55,94,123,1);
+}
+
+.container {
+    margin-top:50px;
+}
+
+#page-footer div{
+    margin-top: 20px;
+}

@@ -1,0 +1,172 @@
+/* MAIN STYLESHEET */
+
+/* 1 Carrousel */
+
+.carrousel-inner img {
+    width: 100%;
+    margin:auto;
+}
+
+
+/* 2 Presentation générale & avancement de la campgne */
+
+#home{
+    background-color: #375e7b;
+}
+
+#prochain_objectif {
+    padding-top:60px;
+    width:80%;
+    height:250px;
+    margin-bottom:40px;
+    border-radius: 7px;
+    color:white;
+    text-align: center;
+    font-size:2em;
+}
+
+#somme_collecte {
+    width:80%;
+    height:250px;
+    margin-bottom:40px;
+    border-radius: 7px;
+}
+
+#somme_template{
+    display: block;
+    width: 75%;
+    margin:auto;
+}
+
+#somme_collecte p{
+    text-align: center;
+    font-size: 4em;
+    color:rgb(240,173,78);
+}
+
+#montant {
+    font-size:3em;
+}
+
+#description_cg {
+    width: 100%;
+    margin-bottom:40px;
+
+}
+#description_cg p{
+    color:white;
+    text-align: justify;
+}
+
+#mdprez {
+    width:100%;
+    height:180px;
+    background-color: white;
+    margin-bottom:20px;
+}
+
+#clickme{
+    margin-top:25px;
+}
+
+#home .btn{
+    margin-bottom:25px;
+}
+
+/* 3 Le Projet */
+
+#projet {
+    background-color: white;
+}   
+
+#desc_projet{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#img_projet_main {
+    width:100%;
+    margin-bottom:25px;
+    border-radius:5px;
+}
+
+#objectifs ul li {
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+
+.img_projet_gallery {
+    margin: 10px 0px;
+    width:100%;
+}
+
+/* 4 Temoignages */
+
+#temoignages{
+    background-color: #375e7b;
+}
+
+.side-image{
+    margin-top:10px;
+}
+
+blockquote {
+    color:white;
+    margin-top:10px;
+    margin-bottom: 60px;
+    text-align: justify;
+}
+
+.blockquote-footer {
+    margin-top:10px;
+    color:white;
+    font-style: italic;
+}
+
+.blockquote-right {
+    border-left: 0px;
+    border-right: 5px solid white;
+}
+
+
+/* 5 Equipe */
+
+.line {
+    width:100%;
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.member {
+    display: inline-block;
+    margin:0px 25px;
+    width: 165px;
+}
+
+.desc {
+    display: inline-block;
+    margin:0px 25px;
+    margin-top:10px;
+    width:150px;
+    height:60px;
+    text-align:center;
+}
+
+.line a img {
+    border: 8px solid transparent;
+}
+
+.line a img:hover{
+    border-color:rgba(55,94,123,0.4);
+}
+
+
+/* Info */
+
+#info{
+    background-color: #375e7b;
+    color:white;
+    text-align:center;
+}
+
