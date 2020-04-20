@@ -91,6 +91,13 @@
 
 /* 3 Le Projet */
 
+video{
+
+    max-width: 720px;
+    display: block;
+    margin:auto;
+}
+
 #projet {
     background-color: white;
 }   
