@@ -96,8 +96,9 @@
 
 /* 3 Le Projet */
 
-video{
-
+iframe{
+    min-width: 350px;
+    min-height: 200px;
     max-width: 720px;
     display: block;
     margin:auto;
