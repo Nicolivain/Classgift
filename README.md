@@ -3,6 +3,8 @@ Site web du ClassGift Mines Paristech P18
 
 Patch notes: 
 
+08/04/2020 : Ajout de la barre centrale P18 et des vidéos YT
+
 04/05/2020 : Maj des montants et des barres de promo
 
 20/04/2020 : Ajout de la vidéo et d'image de galerie, correctifs mineurs
