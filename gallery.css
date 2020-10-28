@@ -14,11 +14,3 @@
     
     margin:10px;
 }
-
-#gallery iframe {
-    display: inline-block;
-    max-width: 300px;
-    max-height: 300px;
-    
-    margin:10px;
-}
