@@ -23,3 +23,13 @@ console.log('SCRIPT')
 new_mines.src = 'media/carousel/mines.jpg'
 new_membres.src = 'media/carousel/membres.jpg'
 new_proj.src = 'media/carousel/proj.jpg'
+function setSideImageSize(){
+    var tem = $('.temoignage')
+    tem.each((index,element) =>{
+        let txt = $(element).children('.col-md-9').children('blockquote');
+        txth = txt.height()
+        $(element).children('.side-image').children('img').css('max-height', txth)
+    })
+}
+setSideImageSize()
+$(window).resize(setSideImageSize);

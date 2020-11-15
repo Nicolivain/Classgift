@@ -1,7 +1,9 @@
 /* CSS commun à toutes les pages */
 
 /* Propriétés génrales */
-
+body{
+    background-color:  #375e7b;
+}
 .content {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -24,34 +26,47 @@
 
 #page-footer {
     background-color: #375e7b;
-    height:110px;
+    margin: 0px;
+    padding: 5px 0 10px 0;
 }
 
 /* Navbar */
-
-nav {
-    margin: 0px;
-    padding: 0px;
-    background-color: rgba(55,94,123,0.9);
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    letter-spacing: 3px;
+    background-color:#375e7be6;
+  }
+.navbar-nav a:hover {
+    color: white !important;
+    background-color: #294b65;
 }
 
 .navbar-header a {
     color:white;
+    margin-right: 7px;
 }
-
 .navbar-header img {
     height:50px;
-    margin-right:25px;
+    margin-right:0px;
+}
+.navbar-header img {
+    height:50px;
+    margin-right:0px;
 }
 
-.nav li a {
-    color:white;
-}
-
-.nav li a:hover{
-    background-color: #294b65;
+#collapsibleNavbar li a {
+    color:rgba(255, 255, 255,.5);
+    width: max-content; 
+    padding:5px;
     border-radius: 7px;
 }
+
 
 .navbar-right{
     margin-right:3%;
@@ -59,14 +74,7 @@ nav {
 
 #facebook {
     margin-right: 2%; 
+    margin-left: 5px; 
     width:40px; 
     padding-top:5px;
-}
-
-/* responsive */
-
-@media only screen and (max-width:800px){
-    .navbar-fixed-top {
-        display:none;
-    }
 }

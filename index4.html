@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <title>ClassGift ENSMP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+    <script src="scripts/index.js" defer></script>
+
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="icon" type="image/png" href="media/favicon.png" />
+
+    
+</head>
+ 
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="navbar-header">
+        <a href="index.html" class='navbar-brand'><img src="media/favicon.png"></a>
+        <a href="/" class='navbar-brand'>ClassGift Mines PSL</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="#tohome">La Campagne</a></li>
+            <li class="nav-item"><a class="nav-link" href="#toprojet">Le Projet</a></li>
+            <li class="nav-item"><a class="nav-link" href="#totemoignages">Témoignages</a></li>
+            <li class="nav-item"><a class="nav-link" href="#toequipe">L'Equipe</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="https://www.jedonneenligne.org/fondationminesparistech/CLASSGIFT18/" target="_blank"><button class="btn btn-warning navbar-btn navbar-right"  style="height: 40px; width:max-content" ><span class="glyphicon glyphicon-euro" ></span> Faire un don !</button></a>
+        <a href="https://www.facebook.com/classgift.ensmp/" target="_blank"><img src="media/facebook/f_logo_RGB-Blue_58.png" id="facebook" class="navbar-right"></a>
+    </div>
+  </nav>
+
+
+<div id="diapo" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#diapo" data-slide-to="0" class="active"></li>
+        <li data-target="#diapo" data-slide-to="1"></li>
+        <li data-target="#diapo" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" id= 'carousel_image_mines' src="media/carousel/mineslow.jpg">    
+            <div class="carousel-caption d-none d-md-block">
+                <h2>ClassGift Mines Paristech</h2>
+                <h3>Rejoignez l'aventure !</h3>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" id= 'carousel_image_proj' src="media/carousel/projlow.jpg">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Notre projet</h2>
+                <h3>Découvrez l'objectif de la campagne !</h3>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" id= 'carousel_image_membres' src="media/carousel/membreslow.jpg">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Témoignages</h2>
+                <h3>Ecoutez ceux qui en parlent le mieux !</h3>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#diapo" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#diapo" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- <div class="carousel slide" id="diapo" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#diapo" data-slide-to="0" class="active"></li>
+        <li data-target="#diapo" data-slide-to="1"></li>
+        <li data-target="#diapo" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="item active" >
+            <a href="#tohome">
+            <img id= 'carousel_image_mines' src="media/carousel/mineslow.jpg" width = "100%">
+            <div class="carousel-caption">
+                <h2>ClassGift Mines Paristech</h2>
+                <h3>Rejoignez l'aventure !</h3>
+            </div>
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="#toprojet">
+            <img id= 'carousel_image_proj' src="media/carousel/projlow.jpg" width = "100%">
+            <div class="carousel-caption">
+                <h2>Notre projet</h2>
+                <h3>Découvrez l'objectif de la campagne !</h3>
+            </div>
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="#totemoignages">
+            <img id= 'carousel_image_membres' src="media/carousel/membreslow.jpg" width = "100%">
+            <div class="carousel-caption">
+                <h2>Témoignages</h2>
+                <h3>Ecoutez ceux qui en parlent le mieux !</h3>
+            </div>
+            </a>
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#diapo" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Précédent</span>
+    </a>
+    <a class="right carousel-control" href="#diapo" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Suivant</span>
+    </a>
+
+
+</div> -->
+
+
+
+<div id="home" class="container-fluid text-center content">
+    <a id="tohome" class="anchor"></a>
+
+    <div class="container-fluid text-center" style="color:white;">
+
+        <h2>CLASSGIFT MINES PARISTECH</h2> 
+        <p><em>Un projet par des mineurs, pour des mineurs</em></p>
+
+    </div>
+
+    <div class="row content">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+            <div id="somme_collecte">
+                <img id="somme_template" src="media/coin pile.png">
+                <p><strong>52 200€</strong></p>
+            </div>
+
+            <div id="prochain_objectif">
+                
+                <p id="promo-text">La Campagne P18 est terminée ! </br>Merci de votre générosité !</p>
+                <p>Prochain objectif :</p>
+                <p>100 000€ !</p>
+
+                <div class="progress promo-bar" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100" style="width:83%">P *8</div>
+                </div>
+                <div class="progress promo-bar" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100" style="width:1%">P99</div>
+                </div>
+                <div class="progress promo-bar" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100" style="width:1%">P89</div>
+                </div>
+                <div class="progress promo-bar">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100" style="width:1%">P79</div>
+                </div>
+                <div class="progress promo-bar">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100" style="width:1%">P69</div>
+                </div>
+                <div class="progress promo-bar">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100" style="width:1%">P59</div>
+                </div>
+                <div class="progress promo-bar">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100" style="width:17%">Autres promotions</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+
+            <div id="description_cg">
+                <p>
+                    </br></br>
+                    Depuis déjà 2013, le ClassGift permet de rassembler les promotions 
+                    autour d’un projet commun. Un projet qui rassemble les élèves de la promotion 
+                    courante et ceux des promotions alumni. Un projet pour contribuer à ce que sera 
+                    l'École des Mines de demain.
+                    </br></br> 
+                    
+                    Un projet qui nous motive. Historiquement centré sur des problématiques sociales 
+                    d’ouverture à l’international, avec l’attribution de bourse scolaires pour 
+                    des élèves étrangers venant étudier dans notre école, le succès de la démarche 
+                    solidaire nous permet aujourd’hui d’envisager d’autres projets d’un autre ordre. 
+                    Cette année, comme l'année précédente, c’est l’usage de la salle des 
+                    boîtes aux lettres que nous souhaitons rénover en un espace 
+                    de rencontre entre étudiants, chercheurs et visiteurs. La P18 a participé à hauteur de 33%, 
+                    nous espérons cette années avoir une participation de plus de 90% et un total de dons entre nos deux années de plus de 100 000€ !
+                    </br></br>
+                </p>
+            </div>
+
+            <div class="container-fluid">
+                <img id="mdprez" class="img-fluid" src="media/mdprez_ps.jpg">
+            
+                <div id="clickme">
+                    <a href="#toprojet"><button type="button" class="btn btn-success"><span class="glyphicon glyphicon-list-alt"></span> Le projet en détails !</button></a>
+                    <a href="https://www.jedonneenligne.org/fondationminesparistech/CLASSGIFT18/" target="_blank"><button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-euro"></span>Faire un don !</button></a>
+                </div>
+            </div>
+                      
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p id="promo-percent">La P18 dans le projet:</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100" style="width:33%">33% de la P18 a donné !
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+
+
+<div id="projet">
+        <a id="toprojet" class="anchor"></a>
+
+        <div class="container text-center" >
+            <h2>LE PROJET CLASSGIFT P18</h2> 
+            <p><em>Découvrez ce qui anime les promotions !</em></p>
+        </div>
+
+        <iframe src="https://www.youtube-nocookie.com/embed/bk76zGwPuGc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        <div class="row content" controls>
+            
+
+            <div class="col-lg-2"></div>
+            <div class="col-lg-3">
+                <div id="desc_projet">Nous avons fait le choix cette année de nous concentrer sur la transformation de l’actuelle salle des boîtes aux lettres au niveau de l’entrée de l’école. Grâce à la collecte ClassGift P18, ce projet novateur et audacieux aboutira à la création d’un espace d’accueil et de travail qui sera une véritable vitrine de l'École.</br></br>Ce projet a l’ambition de répondre à trois objectifs complémentaires:</div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/buYqI8ytrZ0" class="embed-responsive-item" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-lg-3" id="objectifs">
+                <ul>
+                    <li>L’École est actuellement au cœur de <strong>projets passionnants de recherche et d’enseignement</strong> qui restent encore trop souvent dans l’ombre. Nous souhaitons profiter de ce nouvel espace pour présenter et promouvoir l’immense richesse intellectuelle créée au sein des Mines de Paris. Ce projet vise ainsi à développer une <strong>vitrine de l’école</strong> mettant en avant le second aspect de la devise éducative “Théorie et Pratique”.</li>
+                    <li>Autorisant un accès plus aisé au plaisant <strong>jardin des Mines</strong>, cette pièce constituera également un lieu d’accueil à la fois chaleureux et instructif pour les visiteurs. Plusieurs fauteuils accompagnés des journaux et revues scientifiques usuellement disponibles à l'École permettront aux invités d’être confortablement accueillis. Les panneaux et maquettes décrits précédemment seront l’occasion pour les néophytes d’en apprendre plus sur les Mines de Paris.</li>
+                    <li>Cet espace se veut par ailleurs être un emplacement adapté pour <strong>échanger autour de projets</strong> professionnels impliquant des élèves des Mines et des personnes extérieures. A l’aide de multiples espaces de travail, il devra faciliter l’organisation de projets pour des petits groupes d’élèves et d’invités. </li>
+                </ul>
+
+            </div>
+            <div class="col-lg-2" id="mini_gallery">
+                    <img class="img_projet_gallery" src="media/mini_gallery/mg1.png">
+                    <img class="img_projet_gallery" src="media/mini_gallery/mg2.png">
+                    <img class="img_projet_gallery" src="media/mini_gallery/mg3.png">
+                    <img class="img_projet_gallery" src="media/mini_gallery/mg4.png">
+            </div>
+        </div>
+
+
+</div>
+
+
+<div id="temoignages">
+    <a class="anchor" id="totemoignages"></a>
+
+    <div class="container" style="color:white;" >
+        <h2>TEMOIGNAGES</h2> 
+        <p><em>Ecoutez ceux qui en parlent le mieux !</em></p>
+    </div>
+
+
+    <div class="row content">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+
+            <div class="row temoignage">
+                <div class="col-md-3 side-image" style="height:100%"><img class="rounded-circle img-fluid" src="media/quote/chef.jpg"></div>
+                <div class="col-md-9">
+                    <blockquote class="blockquote">
+                        Mais pourquoi un ClassGift ? Après plus d’un an à l’école, je me rends compte de la puissance de ce qu’on appelle l’esprit mineur. On le vit au quotidien en tant qu’étudiant mais, quand on échange avec des alumni, on réalise que celui-ci est un véritable héritage de l’ensemble des promotions d’élèves passées avant nous. Se réunir tous autour d’un même projet, c’est une belle manière de vivifier cet esprit et les relations entre nos promos. Plus encore à travers ce projet qui nous permet de montrer la richesse de notre histoire et l’éclat présent de l’École des Mines
+                        <footer class="blockquote-footer">Thibault Hastings, Président du ClassGift 2018</footer>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="row temoignage">
+                <div class="col-md-9">
+                    <blockquote class="blockquote text-right" >
+                        Depuis son arrivée à l'hôtel Vendôme, l'histoire architecturale de l'école a été une perpétuelle reinvention. Depuis le magnifique petit hôtel particulier d’origine au bâtiment actuel dans les couloirs duquel on se perd facilement, la surface s’est multipliée d’un facteur supérieur à 10! Car les ambitions de l'école et les besoins d'accueillir de nouveaux élèves, de nouveaux enseignants-chercheurs n’ont jamais cessé de croître!
+                        Dans ce contexte, le projet des élèves de réaménager l’espace des casiers semble bien petit en taille mais il est fondamental en substance: en ouvrant un accès au jardin (cet espace magnifique que les élèves fréquentent de plus en plus), il redéfinira la circulation dans toute l'école et permettra l'avènement d’un lieu de croisement principal. Et on sait bien que les meilleures idées naissent là où on se croise!</br>
+
+                        Je ne pouvais donc rêver une meilleure action dans mon engagement pour l'école et c’est pourquoi j’ai absolument voulu y contribuer. Elle démontre aussi le dynamisme et l’intelligence de nos jeunes camarades qui, la tâche accomplie, pourront démontrer aux plus anciens que cette école continue de se réinventer!
+                        <footer class="blockquote-footer" style="text-align: right;">Stephane Delacote, Parrain du ClassGift 2018</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-3 side-image" ><img class="rounded-circle img-fluid"src="media/quote/stephane.jpg"></div>
+            </div>
+
+            <div class="row temoignage">
+                <div class="col-md-3 side-image" ><img class="rounded-circle img-fluid" src="media/quote/jacq.JPG"></div>
+                <div class="col-md-9">
+                    <blockquote class="blockquote mb-0">
+                        Je suis très heureuse d’être marraine du projet ClassGift porté par les élèves. 
+                        Notre école doit vivre et se renouveler, et les élèves qui la fréquentent tous les jours sont les mieux placés pour imaginer ses nécessaires transformations. 
+                        La rénovation de l’espace des casiers est aujourd’hui ô combien nécessaire. Le projet conçu par les élèves permet de créer un lieu plus ouvert et plus accueillant. On pourra s’y attarder pour discuter entre élèves ou avec les profs et chercheurs de l’école ou pour présenter l’école aux visiteurs extérieurs. On pourra aussi circuler plus facilement vers la bibliothèque, les salles de cours ou le jardin. 
+                        Grâce à cette rénovation, ce lieu pourra devenir un espace vivant, bouillonnant de la vie des élèves et des autres personnels de l’école.
+                        Je suis ravie de pouvoir contribuer à ce beau projet et impressionnée par la volonté et le dynamisme des élèves de la promo 2018 : ils gardent le cap, dans un contexte pourtant compliqué, pour que ce projet important puisse bientôt voir le jour ! 
+                        <footer class="blockquote-footer">Véronique Jacq, Marraine du ClassGift 2018</footer>
+                    </blockquote>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<div id="equipe">
+    <a class="anchor" id="toequipe"></a>
+
+    <div class="container text-center" >
+        <h2>NOTRE EQUIPE</h2> 
+        <p><em>Qui sommes nous ?</em></p>
+    </div>
+
+    <div class="row content">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="line">
+                <a href="#collapse1" data-toggle="collapse"><img src="media/team/19favre.jpg" class="rounded-circle member"></a> 
+                <a href="#collapse1" data-toggle="collapse"><img src="media/team/19moeneclaey.jpg" class="rounded-circle member"></a>
+
+                <div id="collapse1" class="collapse">
+                    <div class="desc"><p><strong>Ambroise Favre</strong></p> <p>Pôle projet</p></div>
+                    <div class="desc"><p><strong>Léopold Moeneclaey</strong></p> <p>Pôle projet</p></div>
+                </div>
+
+            </div>
+
+            <div class="line">
+                <a href="#collapse22" data-toggle="collapse"><img src="media/team/19charlotte.jpg" class="rounded-circle member"></a>
+                <div id="collapse22" class="collapse">
+                    <div class="desc"><p><strong>Charlotte De Mailly Nesle</strong></p> <p>Co-présidente</p></div>
+                </div>
+            </div>
+
+            <div class="line">
+                <a href="#collapse21" data-toggle="collapse"><img src="media/team/19plessix.jpg" class="rounded-circle member"></a> 
+                <div id="collapse21" class="collapse">
+                    <div class="desc"><p><strong>Pierre-Adrien Plessix</strong></p> <p>Co-président</p></div>
+                </div>
+            </div>
+
+            <div class="line">
+                <a href="#collapse3" data-toggle="collapse"><img src="media/team/19ferriere.jpg" class="rounded-circle member"></a> 
+                <a href="#collapse3" data-toggle="collapse"><img src="media/team/19goux.jpg" class="rounded-circle member"></a>
+    
+                <div id="collapse3" class="collapse">
+                    <div class="desc"><p><strong>Arsène Ferrière</strong></p> <p>Webmaster</p></div>
+                    <div class="desc"><p><strong>Hadrien Goux</strong></p> <p>Pôle communication</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<div id="info">
+    <div class="container text-center" >
+        <h2>Vous voulez rejoindre l'aventure ?</h2> 
+        <p><em>Participez à la rénovation !</em></p>
+    </div>
+    
+    <div class="row content">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <p>
+                Vous faites partie d’une promotion en *9 (1949, 1959, 1969, 1979, 1989, 1999, 2009) ?</br> Ou le projet vous séduit et vous souhaitez y contribuez ? </br>
+                Vous pourrez bientôt faire un don pour le ClassGift P19 à la Fondation Mines ParisTech et vous participerez de manière directe à la transformation de l’Ecole des Mines!</br>
+                </br><strong>Pour tout don au ClassGift P19 :</strong></br>
+                <ul>
+                <li>66 % du montant de votre don est déductible de votre impôt sur le revenu (IR), dans la limite de 20 % de votre revenu imposable. </li>
+                <li>75 % du montant de votre don est déductible de votre impôt sur la fortune immobilière (IFI), dans la limite de 50 000 € (avec un excédent reportable sur 5 ans). </li>
+                </ul>
+                Aussi, un don de 300 € <strong>vous revient à 102 €</strong> après déduction IR ou à 75 € après déduction IFI. 
+                </br></br>
+            </p> 
+            <p><br><strong> Il n'est pas encore possible de faire un don pour le ClassGift P19. Revenez bientôt ! </strong></p>
+
+            <!-- <a href="https://www.jedonneenligne.org/fondationminesparistech/CLASSGIFT18/" target="_blank"><button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-euro"></span>Faire un don !</button></a>
+
+            <p></br>Ou je télécharge le bulletin de don pour le ClassGift P18 pour faire mon don par chèque ou par virement bancaire</p>
+            <p><a href="media/BulletinClassGiftP18.pdf" style="color:white;">Bulletin.pdf</a></p> -->
+        </div>
+       <div class="col-md-2"></div>
+    </div>
+</div>
+
+
+
+
+</body>
+
+
+<footer id="page-footer">
+    <div class="text-center"><p style="color:white;">ClassGift Mines Paristech - Promotion 2019 </br><em>Rejoignez l'aventure !</em></p>
+    <a href="contact.html" style="color:white;">Contactez nous !</a> </div>
+</footer>
+</html>

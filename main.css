@@ -80,13 +80,6 @@
     text-align: justify;
 }
 
-#mdprez {
-    width:100%;
-    height:180px;
-    background-color: white;
-    margin-bottom:20px;
-}
-
 #clickme{
     margin-top:25px;
 }
@@ -136,32 +129,38 @@ iframe{
 #temoignages{
     background-color: #375e7b;
 }
-
+.temoignage{
+    padding:10px 0 60px 0;
+}
 .side-image{
     margin-top:10px;
+    padding:0 10px 0 10px;
 }
 
 blockquote {
     color:white;
-    margin-top:10px;
-    margin-bottom: 60px;
+    padding: 0 10px 0 10px;
     text-align: justify;
+    font-size: 1.1em !important;
+    border-left: 5px solid white;
 }
 
 .blockquote-footer {
     margin-top:10px;
-    color:white;
+    color:rgb(199, 199, 199);
     font-style: italic;
 }
 
-.blockquote-right {
+.blockquote.text-right{
     border-left: 0px;
     border-right: 5px solid white;
 }
 
 
 /* 5 Equipe */
-
+#equipe {
+    background-color: white;
+}   
 .line {
     width:100%;
     margin-bottom:20px;
