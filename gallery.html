@@ -2,43 +2,42 @@
 
 <html lang="fr">
 
-<head>
-    <title>Galerie</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="gallery.css">
-    <link rel="icon" type="image/png" href="media/favicon.png" />
-</head>
- 
-<body>
-
-
-<nav class="navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-                <a href="index.html"><img src="media/favicon.png"></a>
-                <a href="#" class="navbar-brand">  ClassGift Mines Parsitech </a> 
-        </div>
-        <ul class="nav navbar-nav">
-            <li ><a href="index.html">La Campagne</a></li>
-            <li ><a href="index.html#toprojet">Le Projet</a></li>
-            <li ><a href="index.html#totemoignages">Témoignages</a></li>
-            <li ><a href="index.html#toequipe">L'Equipe</a></li>
-            <li ><a href="gallery.html">Galerie</a></li>
-            <li ><a href="contact.html">Contact</a></li>
-        </ul>
-        <!-- <a href="https://www.jedonneenligne.org/fondationminesparistech/CLASSGIFT18/" target="_blank"><button class="btn btn-warning navbar-btn navbar-right" ><span class="glyphicon glyphicon-euro" ></span> Faire un don !</button></a> -->
-        <a href="https://www.facebook.com/classgift.ensmp/" target="_blank"><img src="media/facebook/f_logo_RGB-Blue_58.png" id="facebook" class="navbar-right"></a>
-    </div>
-</nav>
-
-<div id="gallery">
+    <head>
+        <title>ClassGift ENSMP</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    
+    
+        <script src="scripts/index.js" defer></script>
+    
+    
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="gallery.css">
+        <link rel="icon" type="image/png" href="media/favicon.png" />
+    
+        
+    </head>
+     
+    <body>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            
+        </nav>
+    
+<div id="gallery d-flex flex-column">
     <div class="container text-center">
         <h2>GALERIE</h2> 
         <p><em>Les moments forts de la campagne !</em></p>
@@ -47,8 +46,22 @@
     <div id="tooggler">
     </div>
 
-    
+    <h1 class="time-stamp">ClassGift 2019</h1>
     <div class="content row">
+        
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8" id="gallery">
+            <img src="media/mini_gallery/Image1.png" title="Prévisualisation">
+            <img src="media/mini_gallery/Image2.png" title="Prévisualisation">
+            <img src="media/mini_gallery/Image3.png" title="Prévisualisation">
+            <img src="media/mini_gallery/Image4.png" title="Prévisualisation">
+            
+        </div>
+        <!-- <div class="col-sm-2"></div> -->
+    </div>
+    <h1 class="time-stamp">ClassGift 2018</h1>
+    <div class="content row">
+        
         <div class="col-sm-2"></div>
         <div class="col-sm-8" id="gallery">
             <img src="media/gallery/avt.png" title="Pré rendu">
@@ -60,7 +73,7 @@
             <img src="media/mini_gallery/mg4.png" title="Prévisualisation">
             
         </div>
-        <div class="col-sm-2"></div>
+        <!-- <div class="col-sm-2"></div> -->
     </div>
         
     
@@ -70,7 +83,11 @@
 </body>
 
 <footer id="page-footer">
-    <div class="container text-center"><p style="color:white;">ClassGift Mines Paristech - Promotion 2019 </br><em>Rejoignez l'aventure !</em></p>
-    <a href="contact.html" style="color:white;"><strong>Contactez nous !</strong></a> </div>
 </footer>
 </html>
+<script>
+    $(function(){
+  $(".navbar").load("nav.html");
+  $("#page-footer").load("footer.html");
+});
+</script>

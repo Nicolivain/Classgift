@@ -15,14 +15,10 @@
 }
 
 #prochain_objectif {
-    padding-top:20px;
-    width:80%;
-    padding-bottom:0px;
-    border-radius: 7px;
     color:white;
     text-align: center;
     font-size:2em;
-    margin:auto;
+    margin:0;
 }
 
 #promo-text {
@@ -30,7 +26,9 @@
     margin-top:25px;
     margin-bottom:20px;
 }
-
+.bars{
+    margin-top:35px;
+}
 #promo-percent {
     padding-top: 30px;
     color:white;
@@ -38,11 +36,15 @@
 
 .promo-bar {
     height:15px;
+    margin:10px;
+    color:black;
 }
 
-.progress-bar-warning {
-    font-size: 0.4em;
+.progress-bar {
+    font-size: 0.8em;
     color: black;
+    overflow: visible;
+    padding-left: 2px;
 }
 
 
@@ -61,9 +63,13 @@
 }
 
 #somme_collecte p{
-    text-align: center;
     font-size: 4em;
     color:rgb(240,173,78);
+}
+#somme_collecte h1{
+    color:rgb(240,173,78);
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 #montant {
@@ -151,11 +157,16 @@ blockquote {
     font-style: italic;
 }
 
-.blockquote.text-right{
+.blockquote.right{
     border-left: 0px;
     border-right: 5px solid white;
 }
-
+@media (max-width: 767px){ /** 767px car md de bootstrap a partir de 768px*/
+    .side-image img{
+        height: 30vw;
+        margin-bottom: 20px;
+    }
+}
 
 /* 5 Equipe */
 #equipe {
@@ -168,9 +179,10 @@ blockquote {
 }
 
 .member {
-    display: inline-block;
-    margin:0px 25px;
-    width: 165px;
+    padding: 10px 30px 10px 30px ;
+}
+.member img{
+    max-height: 30vw;
 }
 
 .desc {
@@ -179,7 +191,6 @@ blockquote {
     margin-top:10px;
     width:150px;
     height:60px;
-    text-align:center;
 }
 
 .line a img {

@@ -1,9 +1,7 @@
 /* CSS commun à toutes les pages */
 
 /* Propriétés génrales */
-body{
-    background-color:  #375e7b;
-}
+
 .content {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -49,11 +47,12 @@ body{
 
 .navbar-header a {
     color:white;
-    margin-right: 7px;
+    margin-right: 0;
 }
-.navbar-header img {
-    height:50px;
-    margin-right:0px;
+
+#CG-name{
+    margin-right: 7px;
+    margin-left: 7px;
 }
 .navbar-header img {
     height:50px;

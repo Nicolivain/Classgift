@@ -1,13 +1,21 @@
-nav {
-    margin: 0px;
-    padding: 0px;
-    background-color: rgba(55,94,123,1);
-}
 
+body{
+    font-size: 1em;
+    height: 100vh;
+}
+nav.navbar{
+    position: fixed !important;
+    width: 100%;
+}
+#main{
+    height: 100%;
+}
 .container {
-    margin-top:50px;
+    padding-top:80px;
 }
-
+#contacts{
+    background-color: white !important;
+}
 #page-footer div{
     margin-top: 20px;
 }
