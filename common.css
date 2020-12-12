@@ -77,3 +77,13 @@
     width:40px; 
     padding-top:5px;
 }
+
+#pendulum{
+    display: none;
+    pointer-events: none;
+    width: 15px;
+    transform: translate(100000px, 1000000px);
+    /* background-color: blueviolet; */
+    top:0;
+    left: 0;
+}

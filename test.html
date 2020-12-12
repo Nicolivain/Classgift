@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="custom-cursor" style="background-color: black; position: fixed;">A</div>
+</body>
+<script>
+    const customCursor = document.querySelector('.custom-cursor')
+
+    let mouseX = null
+    let mouseY = null
+
+    document.addEventListener('mousemove', e => {
+    mouseX = e.clientX
+    mouseY = e.clientY
+    })
+
+    const render = () => {
+    customCursor.style.transform = `matrix(1, 0, 0, 1, ${mouseX}, ${mouseY})`
+    
+    requestAnimationFrame(render)
+    }
+
+    render()
+</script>
+</html>

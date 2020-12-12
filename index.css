@@ -9,7 +9,19 @@
 
 
 /* 2 Presentation générale & avancement de la campgne */
+#description_cg {
+    width: 100%;
+    margin-bottom:40px;
+}
 
+#description_cg p{
+    color:white;
+    text-align: justify;
+}
+
+#description_cg strong{
+    white-space: nowrap
+}
 #home{
     background-color: #375e7b;
 }
@@ -32,28 +44,15 @@
 #promo-percent {
     padding-top: 30px;
     color:white;
+    font-size: 2rem;
 }
-
-.promo-bar {
-    height:15px;
-    margin:10px;
-    color:black;
-}
-
-.progress-bar {
-    font-size: 0.8em;
-    color: black;
-    overflow: visible;
-    padding-left: 2px;
-}
-
 
 #somme_collecte {
     width:80%;
     padding-bottom:0px;
     border-radius: 7px;
     margin:auto;
-
+    
 }
 
 #somme_template{
@@ -76,15 +75,6 @@
     font-size:3em;
 }
 
-#description_cg {
-    width: 100%;
-    margin-bottom:40px;
-
-}
-#description_cg p{
-    color:white;
-    text-align: justify;
-}
 
 #clickme{
     margin-top:25px;
@@ -94,6 +84,25 @@
     margin-bottom:25px;
 }
 
+.promo-bar {
+    height:15px;
+    margin:10px;
+    color:black;
+    flex-grow: 1;
+}
+#objectif-p19{
+    color: rgb(240,173,78);
+}
+.progress-bar {
+    font-size: 0.8em;
+    color: black;
+    overflow: visible;
+    padding-left: 2px;
+}
+.promo{
+    margin: 0;
+    color: white;
+}
 /* 3 Le Projet */
 
 iframe{
@@ -182,7 +191,11 @@ blockquote {
     padding: 10px 30px 10px 30px ;
 }
 .member img{
+    border: 8px solid transparent; 
     max-height: 30vw;
+}
+.member img:hover{
+    border-color: rgba(55,94,123,0.4)
 }
 
 .desc {

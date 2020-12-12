@@ -23,6 +23,7 @@
 
     <script src="scripts/index.js" defer></script>
     <script src="scripts/side-image.js" defer></script>
+    <script src="scripts/pendulum.js"></script>
 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="common.css">
@@ -119,8 +120,9 @@
                     solidaire nous permet aujourd’hui d’envisager d’autres projets d’un autre ordre. 
                     Cette année, comme l'année précédente, c’est l’usage de la salle des 
                     boîtes aux lettres que nous souhaitons rénover en un espace 
-                    de rencontre entre étudiants, chercheurs et visiteurs. La P18 a participé à hauteur de 33%, 
-                    nous espérons cette années avoir une participation de plus de 90% et un total de dons entre nos deux années de plus de 100 000€ !
+                    de rencontre entre étudiants, chercheurs et visiteurs. Nous espérons cette années 
+                    avoir une participation de plus de 90% et un total de dons de 60 000€ ce qui ferait, avec l'aide du ClassGift P18,
+                    plus de <strong>110 000€</strong> pour construire <strong>le Carreau de la mine</strong> !
                     </br></br>
                 </p>
             </div>
@@ -139,53 +141,99 @@
     <div class="row">
         <div class="col-md-1"></div>
         <div id="prochain_objectif" class="col-md-4">
-                        
-            <p id="promo-text">La Campagne P18 est terminée ! </br>Merci de votre générosité !</p>
-            <p>Prochain objectif : <br> 100 000€ !</p>
-        </div>
-        <div class="bars col-md-5">
-            <div class="progress promo-bar" >
-                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
-                aria-valuemin="0" aria-valuemax="100" style="width:83%">P *8</div>
-            </div>
-            <div class="progress promo-bar" >
-                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
-                aria-valuemin="0" aria-valuemax="100" style="width:1%">P99</div>
-            </div>
-            <div class="progress promo-bar" >
-                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
-                aria-valuemin="0" aria-valuemax="100" style="width:1%">P89</div>
-            </div>
-            <div class="progress promo-bar">
-                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
-                aria-valuemin="0" aria-valuemax="100" style="width:1%">P79</div>
-            </div>
-            <div class="progress promo-bar">
-                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
-                aria-valuemin="0" aria-valuemax="100" style="width:1%">P69</div>
-            </div>
-            <div class="progress promo-bar">
-                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
-                aria-valuemin="0" aria-valuemax="100" style="width:1%">P59</div>
-            </div>
-            <div class="progress promo-bar">
-                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
-                aria-valuemin="0" aria-valuemax="100" style="width:17%">Autres promotions</div>
-            </div>
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <p id="promo-percent">La P18 dans le projet:</p>
-                <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0"
-                    aria-valuemin="0" aria-valuemax="100" style="width:33%">33% de la P18 a donné !
+        
+        <div class="row justify-content-center align-items-center">
+            <h4 class="col-md-3 text-center" id="objectif-p19">Objectif ClassGift 2019 <br> 60 000€</h4>
+            <div class="bars col-md-7">
+                <div class="row align-items-center justify-content-between">
+
+                    <span class="col-sm-2 promo text-right">P09</span>
+                    <div class="progress promo-bar" >
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100" style="width:1%">0€</div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-between">
+
+                    <span class="col-sm-2 promo text-right">P99</span>
+                    <div class="progress promo-bar" >
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100" style="width:1%">0€</div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                    <span class="col-sm-2 promo text-right">P89</span>
+                    <div class="progress promo-bar" >
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100" style="width:1%">0€</div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                    <span class="col-sm-2 promo text-right">P79</span>
+                    <div class="progress promo-bar">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100" style="width:1%">0€</div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                    <span class="col-sm-2 promo text-right">P69</span>
+                    <div class="progress promo-bar">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100" style="width:1%">0€</div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                    <span class="col-sm-2 promo text-right">P59</span>
+                    <div class="progress promo-bar">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100" style="width:1%">0€</div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                    <span class="col-sm-2 promo text-right">P49</span>
+                    <div class="progress promo-bar ">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100" style="width:1%">0€</div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                    <span class="col-sm-2 promo text-right">Autre</span>
+                    <div class="progress promo-bar">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100" style="width:1%">0€</div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <p id="promo-percent" class="text-center">La p19 dans le projet:</p>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100" style="width:1%">0€
+                    </div>
+                </div>
+            </div>                
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <p id="promo-percent" class="text-center">Prochain objectif : 110 000€ !</p>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100" style="width:47%">Le ClassGift P18: 52 200€
+                    </div>
+                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100" style="width:0.5%">0€
+                    </div>
+                </div>
+            </div>                
+        </div>
+
     </div>
 </div>
 
@@ -199,35 +247,33 @@
             <h2>LE PROJET CLASSGIFT P18/19</h2> 
             <p><em>Découvrez ce qui anime les promotions !</em></p>
         </div>
+        <div class="iframe-container">
+            <iframe src="https://www.youtube.com/embed/71Y3w-brSDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-        <iframe src="https://www.youtube-nocookie.com/embed/bk76zGwPuGc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-        <div class="row content" controls>
-            
-
-            <div class="col-lg-2"></div>
-            <div class="col-lg-3">
-                <div id="desc_projet"
-                >Nous avons fait le choix cette année de nous concentrer sur la transformation de l’actuelle salle des boîtes aux lettres au niveau de l’entrée de l’école. Grâce aux collectes ClassGift P18 et P19, ce projet novateur et audacieux aboutira à la création d’un espace de rencontre et d'échange qui sera une véritable vitrine de l'École.</br></br>
+        <div class="row content justify-content-center" controls>
+            <div class="col-lg-4">
+                <div id="desc_projet">
+                    Nous avons fait le choix cette année de nous concentrer sur la transformation de l’actuelle salle des boîtes aux lettres au niveau de l’entrée de l’école. Grâce aux collectes ClassGift P18 et P19, ce projet novateur et audacieux aboutira à la création d’un espace de rencontre et d'échange qui sera une véritable vitrine de l'École.</br></br>
                 Ce projet a l’ambition de répondre à trois objectifs complémentaires:</div>
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5B7GWm-4BRU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/5B7GWm-4BRU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="col-lg-3" id="objectifs">
+            <div class="col-lg-4" id="objectifs">
                 <ul>
                     <li>L’École est actuellement au cœur de <strong>projets passionnants de recherche et d’enseignement</strong> qui restent encore trop souvent dans l’ombre. Nous souhaitons profiter de ce nouvel espace pour présenter et promouvoir l’immense richesse intellectuelle créée au sein des Mines de Paris. Ce projet vise ainsi à développer une <strong>vitrine de l’école</strong> mettant en avant le second aspect de la devise éducative “Théorie et Pratique”.</li>
                     <li>En plus d'offrir un accès plus aisé au plaisant <strong>jardin des Mines</strong>, cette pièce permettra aux personnes à mobilité réduite d'avoir enfin un moyen d'accéder à la magnifique bibliothèque des Mines. Il constituera également un lieu d’accueil à la fois chaleureux et instructif pour les visiteurs. Un mobilier adapté sera installé afin de faire de cet espace un endroit confortable. Les panneaux et maquettes décrits précédemment seront l’occasion pour les néophytes d’en apprendre plus sur les Mines de Paris.</li>
-                    <!-- <li>Cet espace se veut par ailleurs être un emplacement adapté pour <strong>échanger autour de projets</strong> professionnels impliquant des élèves des Mines et des personnes extérieures. A l’aide de multiples espaces de travail, il devra faciliter l’organisation de projets pour des petits groupes d’élèves et d’invités. </li> -->
+                    <li>Cet espace se veut par ailleurs être un lieu adapté pour <strong>échanger</strong> autour de projets divers pouvant impliquer à la fois des élèves des Mines, des chercheurs de l'écoles et des personnes extérieures. Son emplacement au coeur de l'école en fait un lieu idéal pour faciliter les rencontres entre ces différentes instances des Mines.  </li>
                 </ul>
 
             </div>
             <div class="col-lg-2" id="mini_gallery">
-                    <img class="img_projet_gallery" src="media/mini_gallery/Image1.png">
-                    <img class="img_projet_gallery" src="media/mini_gallery/Image2.png">
-                    <img class="img_projet_gallery" src="media/mini_gallery/Image3.png">
-                    <img class="img_projet_gallery" src="media/mini_gallery/Image4.png">
+                    <img class="img_projet_gallery" src="media/mini_gallery/Image1_low.png">
+                    <img class="img_projet_gallery" src="media/mini_gallery/Image2_low.png">
+                    <img class="img_projet_gallery" src="media/mini_gallery/Image3_low.png">
+                    <img class="img_projet_gallery" src="media/mini_gallery/Image4_low.png">
             </div>
         </div>
 
@@ -276,9 +322,9 @@
                 <div class="col-md-3 side-image text-md-right"><img class="rounded-circle img-fluid" src="media/quote/gilles.jpg"></div>
                 <div class="col-md-9">
                     <blockquote class="blockquote">
-                        &emsp;&emsp;Les élèves de la Promo 2019 ont repris le flambeau de leurs prédécesseurs et organisent ce ClassGift pour marquer avec générosité leur contribution à la vie de l’école. C’est avec un réel plaisir que je suis aux côtés de Carole le parrain de cette initiative, en tant que représentant de la Promo 1979. Pour les autres mineurs de mon année, la salle des boîtes aux lettres est un lieu dont tous se souviennent, gardé par celui que nous surnommions le Commandant mais où nous ne passions qu’en coup de vent tant elle manquait de confort. Personne ne savait qu’il suffisait d’avancer dans un sombre couloir et de pousser une porte pour sortir vers le jardin. 
+                        &emsp;&emsp;Les élèves de la Promo 2019 organisent ce ClassGift pour marquer avec générosité leur contribution à la vie de l’école. C’est avec un réel plaisir que je suis aux côtés de Carole le parrain de cette initiative, en tant que représentant de la Promo 1979. Pour les autres mineurs de mon année, la salle des boîtes aux lettres est un lieu dont tous se souviennent, gardé par celui que nous surnommions le Commandant mais où nous ne passions qu’en coup de vent tant elle manquait de confort. Personne ne savait qu’il suffisait d’avancer dans un sombre couloir et de pousser une porte pour sortir vers le jardin. 
                         <br> 
-                        &emsp;&emsp;Le ClassGift permettra de financer le projet baptisé Petit Quartz pour la transformation de cet espace en lieu de convivialité où il fera bon s’arrêter un instant, discuter, parcourir l’information concernant l’Ecole et pour ceux qui le désireraient accéder au jardin. La Promo 2019 poursuit l’initiative de la précédente en y ajoutant le souci d’en faire un espace répondant aux concepts les plus modernes en matière d’écoconception développés par les labos de l’Ecole et en l’inscrivant dans le projet Grand Quartz de grand amphithéâtre de 450 places. Dans une grande école solidement enracinée dans le Quartier Latin, emboitons le pas de nos jeunes générations et soyons nombreux à participer au financement de ce projet enthousiasmant qui vise à encore mieux valoriser ce beau bâtiment. 
+                        &emsp;&emsp;Le ClassGift permettra de financer la transformation de cet espace en lieu de convivialité où il fera bon s’arrêter un instant, discuter, parcourir l’information concernant l’Ecole et pour ceux qui le désireraient accéder au jardin. Dans une grande école solidement enracinée dans le Quartier Latin, emboitons le pas de nos jeunes générations et soyons nombreux à participer au financement de ce projet enthousiasmant qui vise à encore mieux valoriser ce beau bâtiment. 
                         <footer class="blockquote-footer">Gilles Gantois, Parrain du ClassGift 2019</footer>
                     </blockquote>
                 </div>
@@ -301,11 +347,11 @@
         <div class="row justify-content-center">
             <div class="col-md-3 text-center member">
                 <a href=".collapse1" data-toggle="collapse" id="link11"><img src="media/team/19favre.jpg" class="rounded-circle img-fluid"></a> 
-                <div class="text-center collapse collapse1" id="collapse11"><p><strong>Ambroise Favre classe</strong></p> <p>Pôle projet</p></div>
+                <div class="text-center collapse collapse1" id="collapse11"><p><strong>Ambroise Favre</strong></p> <p>Pôle projet</p></div>
             </div>
             <div class="col-md-3 text-center member">
                 <a href=".collapse1" data-toggle="collapse" id="link12"><img src="media/team/19moeneclaey.jpg" class="rounded-circle img-fluid"></a>
-                <div class="text-center collapse collapse1" id="collapse12"><p><strong>Léopold Moeneclaey classe</strong></p> <p>Pôle projet</p></div>
+                <div class="text-center collapse collapse1" id="collapse12"><p><strong>Léopold Moeneclaey</strong></p> <p>Pôle projet</p></div>
             </div>
         </div>
 
@@ -368,7 +414,10 @@
 
 
 
-
+<div id='pendulum' class="position-fixed">
+    <div class="halo rounded-circle"></div>
+    <img src="media/pointer.svg.png" alt="heyeyey" class="img-fluid">
+</div>
 </body>
 
 
